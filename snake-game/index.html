@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Snake Game</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<canvas id="canvas" width="608" height="608"></canvas>
+		<!-- The Modal -->
+		<div class="modal" id="game-over-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Game Over</h4>
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						Your score: <span id="score">0</span
+						><img
+							src="food.png"
+							width="25"
+							height="25"
+							style="margin-top: -10px;"
+						/>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" id="btn-reset" class="btn btn-primary">
+							Play Again
+						</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="snake.js"></script>
+	</body>
+</html>
